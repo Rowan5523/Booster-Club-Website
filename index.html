@@ -211,27 +211,6 @@
     <div style="padding-top: 30px;">
       <center><img src="image.jpg" alt="Image 3" id="image3" style="border: 10px solid black;"></center>
     </div>
-    <script>
-      const image1 = document.getElementById('image1');
-      const image2 = document.getElementById('image2');
-
-      image1.classList.add('active');
-
-      const imageSources = ['sub.png', 'wrona.png'];
-      let currentIndex = 0;
-
-      function changeImage() {
-          image1.classList.remove('active');
-          image2.classList.remove('active');
-
-          currentIndex = (currentIndex + 1) % imageSources.length;
-
-          image2.src = imageSources[currentIndex];
-
-          image2.classList.add('active');
-      }
-
-      setInterval(changeImage, 5000);
-    </script>
+    <script src="script2.js"></script>
 </body>
 </html>

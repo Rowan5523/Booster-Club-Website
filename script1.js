@@ -25,3 +25,4 @@ nextBtn.addEventListener("click", showNextSlide);
 prevBtn.addEventListener("click", showPrevSlide);
 
 updateSlidePosition();
+
