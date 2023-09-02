@@ -5,10 +5,10 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
 let c = 0;
-const slideWidth = images[0].clientWidth;
+const slideWidth = images[0].clientWidth * images.length; // Updated to calculate total width
 
 function updateSlidePosition() {
-    carouselSlide.style.transform = `translateX(-${slideWidth * c}px)`;
+    carouselSlide.style.transform = `translateX(-${slideWidth * c}px)`; // Corrected translation
 }
 
 function showNextSlide() {
@@ -25,4 +25,3 @@ nextBtn.addEventListener("click", showNextSlide);
 prevBtn.addEventListener("click", showPrevSlide);
 
 updateSlidePosition();
-
