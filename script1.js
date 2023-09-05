@@ -1,28 +1,27 @@
-
-  const carouselSlide = document.querySelector(".carousel-slide");
+const carouselSlide = document.querySelector(".carousel-slide");
   const images = document.querySelectorAll(".carousel-slide img");
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
 
-  let c = 0;
-
-  // Calculate the total width of all images combined
-  const slideWidth = images[0].clientWidth * images.length;
-  
-  // Set the width of the carouselSlide element
-  carouselSlide.style.width = `${slideWidth}px`;
+  let currentImageIndex = 0;
 
   function updateSlidePosition() {
-    carouselSlide.style.transform = `translateX(-${images[0].clientWidth * c}px)`;
+    carouselSlide.style.transform = `translateX(-${currentImageIndex * 100}%)`;
   }
 
   function showNextSlide() {
-    c = (c + 1) % images.length;
+    currentImageIndex++;
+    if (currentImageIndex === images.length) {
+      currentImageIndex = 0; // Loop back to the first image
+    }
     updateSlidePosition();
   }
 
   function showPrevSlide() {
-    c = (c - 1 + images.length) % images.length;
+    currentImageIndex--;
+    if (currentImageIndex < 0) {
+      currentImageIndex = images.length - 1; // Go to the last image when at the beginning
+    }
     updateSlidePosition();
   }
 
@@ -30,4 +29,3 @@
   prevBtn.addEventListener("click", showPrevSlide);
 
   updateSlidePosition();
-
