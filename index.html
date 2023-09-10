@@ -151,60 +151,74 @@
   }
   /* Your existing CSS styles */
 
-  /* Mobile Styles */
-  @media screen and (max-width: 768px) {
-    /* Adjust font size for smaller screens */
-    body {
-      font-size: 16px;
-    }
+/* Your existing CSS styles */
 
-    /* Center-align text in the navigation bar */
-    nav {
-      text-align: center;
-    }
-
-    /* Adjust padding and margins for better spacing */
-    .navitem {
-      margin: 10px;
-    }
-
-    /* Adjust the size of the logo/banner for smaller screens */
-    #image3 {
-      width: 100%;
-    }
-
-    /* Adjust the width and height of carousel images */
-    .carousel-slide img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Center-align mission statement text */
-    .mission-statement {
-      text-align: center;
-    }
-
-    /* Adjust padding and margins for mission statement */
-    .mission-statement p {
-      font-size: 14px;
-      padding: 0 10px;
-    }
-
-    /* Adjust spacing for Follow Us and Contact Us sections */
-    .board-members {
-      padding-right: 0;
-    }
-
-    /* Center-align Follow Us and Contact Us text */
-    .board-members h1 {
-      text-align: center;
-    }
-
-    /* Adjust spacing for social media icons */
-    .board-members img {
-      margin: 10px 0;
-    }
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  /* Adjust font size for smaller screens */
+  body {
+    font-size: 16px;
   }
+
+  /* Center-align text in the navigation bar */
+  nav {
+    text-align: center;
+  }
+
+  /* Adjust padding and margins for better spacing in the navbar */
+  .navitem {
+    margin: 5px 10px; /* Adjust the margin as needed */
+  }
+
+  /* Adjust padding for the navbar itself */
+  nav ul {
+    padding: 0;
+  }
+
+  /* Adjust the size of the logo/banner for smaller screens */
+  #image3 {
+    width: 100%;
+  }
+
+  /* Adjust the width and height of carousel images */
+  .carousel-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Center-align mission statement text */
+  .mission-statement {
+    text-align: center;
+  }
+
+  /* Adjust padding and margins for mission statement */
+  .mission-statement p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  /* Adjust spacing for Follow Us and Contact Us sections */
+  .board-members {
+    padding-right: 0;
+  }
+
+  /* Center-align Follow Us and Contact Us text */
+  .board-members h1 {
+    text-align: center;
+  }
+
+  /* Adjust spacing for social media icons */
+  .board-members img {
+    margin: 10px 0;
+  }
+
+  /* Adjust spacing for content below announcements */
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align content */
+  }
+}
+
 
 </style>
 <body>
@@ -240,7 +254,7 @@
       <div class="mission-statement">
         <center><h1>Our Mission Statement</h1></center>
         <div style="padding-right: 50px;">
-          <center><p style="font-size: 20px;">The mission of the Chapin High School Navy JROTC Booster Club is to <br> promote and support the Navy JROTC program and Chapin High School. <br> We are a 501(c)(3) non-profit organization made up of parents and other <br> interested adults from the Chapin community. We raise funds to enhance <br> and expand the academic and extracurricular activities of the program.</p></center>
+          <center><p style="font-size: 20px;">The mission of the Chapin High School Navy JROTC Booster Club is to <br> promote and support the Navy JROTC program at Chapin High School. <br> We are a 501(c)(3) non-profit organization made up of parents and other <br> interested adults from the Chapin community. We raise funds to enhance <br> and expand the academic and extracurricular activities of the program.</p></center>
         </div>
         <div style="padding-top: 30px;">
           <div id="image-spot">
