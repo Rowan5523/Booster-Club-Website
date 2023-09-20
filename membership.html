@@ -173,32 +173,34 @@
   .navitem a {
     padding: 5px 10px;
   }
-  /* Reduce padding for the Booster Club Board Members section */
   .board-members {
     padding-top: 10px;
   }
 
   /* Center-align and resize images */
   .container {
-    justify-content: center; /* Center-align content horizontally */
+    justify-content: flex-start; /* Align content to the left */
   }
 
   .front {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: flex-start; /* Align items to the left */
   }
 
   img#image8 {
     max-width: 45%; /* Adjust the percentage as needed */
     height: auto;
     display: block;
-    margin: 0 10px; /* Add space between images */
+    margin: 0 5px 10px 0; /* Add space between images and move them to the left */
   }
 
   /* Adjust font size for text under images */
   .back p {
-    font-size: 18px;
+    font-size: 8px; /* Make the text smaller */
+    margin: 0; /* Remove default margin */
   }
+
 }
 </style>
 <body>
