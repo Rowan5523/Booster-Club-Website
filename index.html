@@ -165,7 +165,7 @@
 
   /* Adjust padding and margins for better spacing in the navbar */
   .navitem {
-    margin: 0 2px; /* Adjust the margin as needed */
+    margin: 0 10px; /* Adjust the margin as needed */
   }
 
   /* Adjust padding for the navbar itself */
@@ -178,54 +178,27 @@
     padding: 5px 10px;
   }
 
-  /* Adjust the size of the logo/banner for smaller screens */
-  /* For Image 1 */
-  #image1 {
-    max-width: 100%;
-    height: auto;
+  /* Center-align all text and images */
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align content */
   }
 
-  /* For Image 2 and Image 3 in the carousel */
-  .carousel-slide img {
-    max-width: 100%;
+  /* Center-align and resize images */
+  img {
+    max-width: 90%; /* Adjust the percentage as needed */
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
-  /* For Image 4 and Image 5 inside the mission statement */
-  #image4,
-  #image5 {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* For Image 6 and Image 7 in the Follow Us section */
-  #image6,
-  #image7 {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* For Image 8 at the bottom */
+  /* For Image 8 at the bottom with border */
   #image8 {
-    max-width: 100%;
-    height: auto;
-    border: 10px solid black;
+    border: 5px solid black; /* Adjust border size as needed */
   }
 
-  /* Adjust the width and height of carousel images */
-  .carousel-slide img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Center-align mission statement text */
+  /* Adjust spacing for mission statement text */
   .mission-statement {
-    text-align: center;
-  }
-
-  /* Adjust padding and margins for mission statement */
-  .mission-statement p {
-    font-size: 14px;
     padding: 0 10px;
   }
 
@@ -234,22 +207,12 @@
     padding-right: 0;
   }
 
-  /* Center-align Follow Us and Contact Us text */
-  .board-members h1 {
-    text-align: center;
-  }
-
   /* Adjust spacing for social media icons */
   .board-members img {
     margin: 10px 0;
   }
-
-  /* Adjust spacing for content below announcements */
-  .container {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center-align content */
-  }
 }
+
 </style>
 <body>
     <nav>
