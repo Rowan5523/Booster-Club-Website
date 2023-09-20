@@ -165,7 +165,7 @@
 
   /* Adjust padding and margins for better spacing in the navbar */
   .navitem {
-    margin: 0 5px; /* Adjust the margin as needed */
+    margin: 0 2px; /* Adjust the margin as needed */
   }
 
   /* Adjust padding for the navbar itself */
@@ -179,8 +179,37 @@
   }
 
   /* Adjust the size of the logo/banner for smaller screens */
-  #image3 {
-    width: 100%;
+  /* For Image 1 */
+  #image1 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* For Image 2 and Image 3 in the carousel */
+  .carousel-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* For Image 4 and Image 5 inside the mission statement */
+  #image4,
+  #image5 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* For Image 6 and Image 7 in the Follow Us section */
+  #image6,
+  #image7 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* For Image 8 at the bottom */
+  #image8 {
+    max-width: 100%;
+    height: auto;
+    border: 10px solid black;
   }
 
   /* Adjust the width and height of carousel images */
@@ -239,13 +268,13 @@
         </li>
     </nav>
     <div style="padding-top: 30px;">
-      <center><img src="ACTUALFRBANNER.png" alt="Image 3" id="image3"></center>
+      <center><img src="ACTUALFRBANNER.png" alt="Image 1" id="image1"></center>
     </div>
     <h1><center>Announcements</center></h1>
     <div class="carousel-container">
       <div class="carousel-slide">
-        <img src="scott.png" alt="Image 1">
-        <img src="cadet.png" alt="Image 2">
+        <img src="scott.png" alt="Image 2">
+        <img src="cadet.png" alt="Image 3">
       </div>
       <button class="carousel-btn prev-btn">&#10094;</button>
       <button class="carousel-btn next-btn">&#10095;</button>
@@ -269,10 +298,10 @@
         <div style="padding-right: 150px;">
           <div style="padding-top: 30px;">
             <center><h1>Follow Us</h1></center>
-            <center><img src="insta.png" alt="Image 3" id="image3"></center>
+            <center><img src="insta.png" alt="Image 6" id="image6"></center>
             <center><h3>Instagram</h3></center>
             <center><h3><a href="https://www.instagram.com/chapinnjrotc/"style="text-decoration: underline; color: blue;">Chapin NJROTC Instagram Page</a></h2></center>
-            <center><img src="fb.png" alt="Image 3" id="image3"></center>
+            <center><img src="fb.png" alt="Image 7" id="image7"></center>
             <center><h3>Facebook</h3></center>
             <center><h3><a href="https://www.facebook.com/ChapinNJROTC/"style="text-decoration: underline; color: blue;">Chapin NJROTC Facebook Page</a></h2></center>
           </div>
@@ -286,7 +315,7 @@
       </div>
     </div>
     <div style="padding-top: 30px;">
-      <center><img src="image.jpg" alt="Image 3" id="image3" style="border: 10px solid black;"></center>
+      <center><img src="image.jpg" alt="Image 8" id="image8" style="border: 10px solid black;"></center>
     </div>
     <script src="script2.js"></script>
 </body>
