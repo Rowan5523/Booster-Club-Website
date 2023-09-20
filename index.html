@@ -153,36 +153,39 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-  /* Adjust font size for smaller screens */
+  /* Adjust font size and spacing for smaller screens */
   body {
-    font-size: 16px;
+    font-size: 14px;
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
-  /* Center-align text in the navigation bar */
+  /* Center-align text in the navigation bar and reduce spacing */
   nav {
     text-align: center;
+    padding: 15px;
   }
 
   /* Adjust padding and margins for better spacing in the navbar */
   .navitem {
-    margin: 0 10px; /* Adjust the margin as needed */
-  }
-
-  /* Adjust padding for the navbar itself */
-  nav ul {
-    padding: 0;
+    margin: 0 5px; /* Reduce the margin */
   }
 
   /* Ensure all navbar items fit within the dark blue background */
   .navitem a {
-    padding: 5px 10px;
+    padding: 5px 8px; /* Reduce padding */
+  }
+
+  /* Make the banner extend full width */
+  #image1 {
+    width: 100vw; /* 100% of viewport width */
+    margin-left: calc(-50vw + 50%); /* Center the image */
+    margin-right: calc(-50vw + 50%);
   }
 
   /* Center-align all text and images */
   .container {
     flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center-align content */
+    align-items: flex-end; /* Align to the right */
   }
 
   /* Center-align and resize images */
@@ -191,16 +194,6 @@
     height: auto;
     display: block;
     margin: 0 auto;
-  }
-
-  /* For Image 1 */
-  #image1 {
-    width: 100%;
-  }
-
-  /* For Image 8 at the bottom with border */
-  #image8 {
-    border: 5px solid black; /* Adjust border size as needed */
   }
 
   /* Adjust spacing for mission statement text */
@@ -216,7 +209,7 @@
 
   /* Adjust spacing for Follow Us and Contact Us sections */
   .board-members {
-    padding-left: 20px;
+    padding-left: 0; /* Remove left padding */
     text-align: center; /* Center-align content */
   }
 
@@ -225,7 +218,6 @@
     margin: 10px 0;
   }
 }
-
 
 
 </style>
