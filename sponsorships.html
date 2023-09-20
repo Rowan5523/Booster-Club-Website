@@ -145,6 +145,35 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  @media screen and (max-width: 768px) {
+  /* Adjust font size for smaller screens */
+  body {
+    font-size: 16px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  /* Center-align text in the navigation bar */
+  nav {
+    text-align: center;
+    font-size: 14px; /* Adjust font size */
+    padding: -5px; /* Adjust padding for spacing */
+  }
+
+
+  /* Adjust padding and margins for better spacing in the navbar */
+  .navitem {
+    margin: 0 1px; /* Adjust the margin as needed */
+  }
+
+  /* Adjust padding for the navbar itself */
+  nav ul {
+    padding: 0;
+  }
+  }
+  /* Ensure all navbar items fit within the dark blue background */
+  .navitem a {
+    padding: 5px 10px;
+  }
 </style>
 <body>
     <nav>
