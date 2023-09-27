@@ -188,19 +188,26 @@
     justify-content: flex-start; /* Align items to the left */
   }
 
-  img#image8 {
-    max-width: 100%; /* Adjust the percentage as needed */
+/* Move the text with info 75px to the left */
+.text-info {
+    margin-left: -75px;
+}
+
+/* Move the images 200px to the right */
+img#image8 {
+    max-width: 100%;
     transform: scale(2.2);
     height: auto;
     display: block;
-    margin: 0 75px 100px -125px; /* Add space between images and move them to the left */
-  }
+    margin: 0 75px 100px 200px; /* Add space between images and move them to the left */
+}
 
-  /* Adjust font size for text under images */
-  .back p {
+/* Adjust font size for text under images */
+.back p {
     font-size: 11px !important; /* Make the text smaller */
     margin: -60px; /* Remove default margin */
-  }
+}
+
 
 }
 </style>
