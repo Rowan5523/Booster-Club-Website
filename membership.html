@@ -180,10 +180,11 @@
   /* Center-align and resize images */
   .container {
     justify-content: flex-start; /* Align content to the left */
-  }
+    margin-left: -60px; /* Move containers to the left */
+}
 
   .front {
-    margin-top: -35px;
+    margin-top: -95px;
     margin-left: -40px;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
@@ -197,7 +198,7 @@
 }
 
 .back p {
-    margin-bottom: 600px;
+  margin: 200px 0; /* Increase the vertical margin between paragraphs */
   }
 
 /* Move the text with info 75px to the left */
@@ -212,7 +213,7 @@ img#image8 {
     transform: scale(.5);
     height: auto;
     display: block;
-    margin: 0 75px 100px 35px; /* Add space between images and move them to the left */
+    margin: 100px 75px 100px 35px; /* Add space between images and move them to the left */
 }
 
 /* Adjust font size for text under images */
