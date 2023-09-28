@@ -28,18 +28,19 @@ function changeImage() {
 
     if (currentIndex === 0) {
         image1.src = imageSources[currentIndex];
-        image2.src = imageSources[currentIndex + 1];
-        image3.src = imageSources[imageSources.length - 1];
-    } else if (currentIndex === imageSources.length - 1) {
+        image2.src = imageSources[(currentIndex + 1) % imageSources.length];
+        image3.src = imageSources[(currentIndex + 2) % imageSources.length];
+    } else if (currentIndex === 1) {
         image1.src = imageSources[currentIndex];
-        image2.src = imageSources[0];
+        image2.src = imageSources[(currentIndex + 1) % imageSources.length];
         image3.src = imageSources[currentIndex - 1];
-    } else {
+    } else if (currentIndex === 2) {
         image1.src = imageSources[currentIndex];
-        image2.src = imageSources[currentIndex + 1];
-        image3.src = imageSources[currentIndex - 1];
+        image2.src = imageSources[currentIndex - 1];
+        image3.src = imageSources[(currentIndex - 2) % imageSources.length];
     }
 }
 
 setInterval(changeImage, 5000);
+
 
