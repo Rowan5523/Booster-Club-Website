@@ -33,11 +33,11 @@ function changeImage() {
     } else if (currentIndex === 1) {
         image1.src = imageSources[currentIndex];
         image2.src = imageSources[(currentIndex + 1) % imageSources.length];
-        image3.src = imageSources[currentIndex - 1];
+        image3.src = imageSources[currentIndex - 2];
     } else if (currentIndex === 2) {
         image1.src = imageSources[currentIndex];
-        image2.src = imageSources[currentIndex - 1];
-        image3.src = imageSources[(currentIndex - 2) % imageSources.length];
+        image2.src = imageSources[currentIndex - 2];
+        image3.src = imageSources[(currentIndex - 1) % imageSources.length];
     }
 }
 
