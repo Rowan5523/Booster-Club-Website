@@ -6,41 +6,27 @@ const imageSources = ['sub.png', 'wrona.png', 'legion.png'];
 let currentIndex = 0;
 
 function changeImage() {
-    switch (currentIndex) {
-        case 0:
-            image1.classList.add('active');
-            image2.classList.remove('active');
-            image3.classList.remove('active');
-            break;
-        case 1:
-            image1.classList.remove('active');
-            image2.classList.add('active');
-            image3.classList.remove('active');
-            break;
-        case 2:
-            image1.classList.remove('active');
-            image2.classList.remove('active');
-            image3.classList.add('active');
-            break;
-    }
+    image1.classList.remove('active');
+    image2.classList.remove('active');
+    image3.classList.remove('active');
 
     currentIndex = (currentIndex + 1) % imageSources.length;
 
     if (currentIndex === 0) {
+        image1.classList.add('active');
         image1.src = imageSources[currentIndex];
-        image2.src = imageSources[(currentIndex + 1) % imageSources.length];
-        image3.src = imageSources[(currentIndex + 2) % imageSources.length];
     } else if (currentIndex === 1) {
-        image1.src = imageSources[currentIndex];
-        image2.src = imageSources[(currentIndex + 1) % imageSources.length];
-        image3.src = imageSources[currentIndex - 2];
+        image2.classList.add('active');
+        image2.src = imageSources[currentIndex];
     } else if (currentIndex === 2) {
-        image1.src = imageSources[currentIndex];
-        image2.src = imageSources[currentIndex - 2];
-        image3.src = imageSources[(currentIndex - 1) % imageSources.length];
+        image3.classList.add('active');
+        image3.src = imageSources[currentIndex];
     }
 }
 
-setInterval(changeImage, 5000);
+// Initial call to display the first image
+changeImage();
 
+// Set an interval to change the image every 5 seconds
+setInterval(changeImage, 5000);
 
