@@ -1,10 +1,11 @@
 // script2.js
 const image1 = document.getElementById('image4');
 const image2 = document.getElementById('image5');
+const image3 = document.getElementById('image9');
 
 image1.classList.add('active');
 
-const imageSources = ['sub.png', 'wrona.png'];
+const imageSources = ['sub.png', 'wrona.png', 'legion.png'];
 let currentIndex = 0;
 
 function changeImage() {
