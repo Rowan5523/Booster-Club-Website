@@ -160,26 +160,28 @@
   }
 
   /* Center-align text in the navigation bar */
-  nav {
+    nav {
     text-align: center;
-    font-size: 14px; /* Adjust font size */
-    padding: -5px; /* Adjust padding for spacing */
+    font-size: 12px;
+    padding: 27px 0;             /* ↑ makes the blue bar a bit thicker */
+    display: flex;              /* centers contents vertically */
+    align-items: center;        /* vertical centering */
+    justify-content: center;    /* horizontal centering */
   }
 
 
   /* Adjust padding and margins for better spacing in the navbar */
   .navitem {
-    margin: 0 1px; /* Adjust the margin as needed */
+    margin: 0 2px; /* Adjust the margin as needed */
   }
 
-  /* Adjust padding for the navbar itself */
   nav ul {
     padding: 0;
+    margin: 0; /* remove default spacing */
   }
 
-  /* Ensure all navbar items fit within the dark blue background */
   .navitem a {
-    padding: 5px 10px;
+    padding: 3px 5px; /* smaller clickable area */
   }
 
     /* Adjust the width and height of carousel images */
@@ -243,6 +245,23 @@
   /* Adjust spacing for social media icons */
   .board-members img {
     margin: 10px 0;
+  }
+}
+
+  .mission-statement,
+  .board-members {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    padding-right: 0 !important;
+    text-align: center;
+  }
+
+  .mission-statement > div,
+  .board-members > div {
+    padding-right: 0 !important;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
