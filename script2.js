@@ -4,7 +4,7 @@ const image3 = document.getElementById('image97');
 const image4 = document.getElementById('image98');
 const image5 = document.getElementById('image99');
 
-const imageSources = ["bmw.png", "hisradio.png", "Jay Kilmartin logo.png", "The melting pot screenshot.png", "Greater Chapin Community Foundation logo.png"];
+const imageSources = ["bmw.png", "hisradio.png", "new.png", "The melting pot screenshot.png", "Jay Kilmartin logo.png"];
 let currentIndex = 0;
 
 function changeImage() {
