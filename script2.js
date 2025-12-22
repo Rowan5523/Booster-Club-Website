@@ -1,11 +1,10 @@
-const image1 = document.getElementById('image4');
-const image2 = document.getElementById('image5');
-const image3 = document.getElementById('image9');
+const image1 = document.getElementById('image99');
+const image2 = document.getElementById('image95');
+const image3 = document.getElementById('image96');
 const image4 = document.getElementById('image97');
 const image5 = document.getElementById('image98');
-const image6 = document.getElementById('image99');
 
-const imageSources = ['sub.png', 'logo (2).jpeg', 'Woods RnR.jpeg', "Jay Kilmartin logo.png", "The melting pot screenshot.png", "Greater Chapin Community Foundation logo.png"];
+const imageSources = ["bmw.png", "hisradio.png", "Jay Kilmartin logo.png", "The melting pot screenshot.png", "Greater Chapin Community Foundation logo.png"];
 let currentIndex = 0;
 
 function changeImage() {
@@ -30,10 +29,7 @@ function changeImage() {
     } else if (currentIndex === 4) {
         image3.classList.add('active');
         image3.src = imageSources[currentIndex];
-    } else if (currentIndex === 5) {
-        image3.classList.add('active');
-        image3.src = imageSources[currentIndex];
-    }
+    } 
 }
 
 // Initial call to display the first image
