@@ -1,8 +1,8 @@
-const image1 = document.getElementById('image99');
-const image2 = document.getElementById('image95');
-const image3 = document.getElementById('image96');
-const image4 = document.getElementById('image97');
-const image5 = document.getElementById('image98');
+const image1 = document.getElementById('image95');
+const image2 = document.getElementById('image96');
+const image3 = document.getElementById('image97');
+const image4 = document.getElementById('image98');
+const image5 = document.getElementById('image99');
 
 const imageSources = ["bmw.png", "hisradio.png", "Jay Kilmartin logo.png", "The melting pot screenshot.png", "Greater Chapin Community Foundation logo.png"];
 let currentIndex = 0;
