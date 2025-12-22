@@ -152,12 +152,32 @@
 /* Your existing CSS styles */
 
 /* Mobile Styles */
+/* --- Desktop stays as-is --- */
+.board-members {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 150px;  /* original desktop padding */
+    padding-right: 150px; /* original desktop padding */
+}
+
+/* --- Mobile only --- */
 @media screen and (max-width: 768px) {
   .board-members {
-    display: flex;
-    justify-content: center;
+    padding-left: 0;  /* override desktop */
+    padding-right: 0; /* override desktop */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .board-members > div {
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
 
 
    /* Center-align text in the navigation bar */
