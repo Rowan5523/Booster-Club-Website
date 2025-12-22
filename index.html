@@ -151,34 +151,28 @@
   }
 /* Your existing CSS styles */
 
-/* Mobile Styles */
-/* --- Desktop stays as-is --- */
-.board-members {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 150px;  /* original desktop padding */
-    padding-right: 150px; /* original desktop padding */
+
+.board-members-inner {
+  padding-right: 150px;
 }
 
-/* --- Mobile only --- */
 @media screen and (max-width: 768px) {
-  .board-members {
-    padding-left: 0;  /* override desktop */
-    padding-right: 0; /* override desktop */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  .board-members-inner {
+    padding-right: 0;
+    padding-left: 0;
   }
-
-  .board-members > div {
+  
+  .board-members {
+    padding-left: 0;
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-
+    
+  body {
+    font-size: 16px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
 
    /* Center-align text in the navigation bar */
 nav {
@@ -255,13 +249,6 @@ nav {
     margin: 0 auto;
   }
 
-/* Adjust spacing for Follow Us and Contact Us sections */
-.board-members {
-  padding-left: 40px;
-  text-align: center; /* Center-align content */
-  margin-top: -130px; /* Reduce the top margin to bring it closer to the images */
-}
-
   /* Adjust spacing for social media icons */
   .board-members img {
     margin: 10px 0;
@@ -303,15 +290,15 @@ nav {
           <div id="image-spot">
             <img src="bmw.png" alt="Image 95" id ="image95">
             <img src="hisradio.png" alt="Image 96" id ="image96">
-            <img src="new.png" alt="Image 97" id ="image97">
+            <img src="Greater Chapin Community Foundation logo.png" alt="Image 97" id ="image97">
             <img src="The melting pot screenshot.png" alt="Image 98" id ="image98">
             <img src="Jay Kilmartin logo.png" alt="Image 99" id ="image99">
           </div> 
           <script src="script2.js"></script>
         </div>
       </div>
-      <div class="board-members">
-        <div style="padding-right: 150px;">
+    <div class="board-members">
+        <div class="board-members-inner">
           <div style="padding-top: 30px;">
             <center><h1>Follow Us</h1></center>
             <center><img src="insta.png" alt="Image 6" id="image6"></center>
@@ -326,10 +313,7 @@ nav {
             <center><h3><a href="mailto:heather.m@chapinhsnjrotcboosterclub.com" style="text-decoration: underline; color: blue;">Email Heather Mayer</a></h3></center>
           </div>
         </div>
-        <div style="padding-right: 150px;">
-        </div>
       </div>
-    </div>
     <div style="padding-top: 30px;">
       <center><img src="New ROTC group photo.png" alt="Image 8" id="image8" style="border: 10px solid black;"></center>
     </div>
